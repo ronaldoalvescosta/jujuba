@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: jujuba
+  labels:
+    app: jujuba
+    environment: dev
