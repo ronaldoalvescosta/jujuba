@@ -8,28 +8,41 @@
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="{% static 'style.css' %}">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
         <link rel="icon" type="image/x-icon" href="{% static 'favicon.ico' %}">
         <title>{% block title %}{% endblock %}</title>
     </head>
     <body>
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="/">Multi-Cloud Operator</a>
+            <a class="navbar-brand" href="/">Multicloud Ops</a>
             <div class="btn-group ml-auto dropleft">
-                {% include "./auth/auth-bar-items.html" %}
+                {% include "topbar.html" %}
             </div>
         </nav>
         
         <p>
 
         <div class="container body-content">
-            {% block body %}{% endblock %}
+            <div class="card">
+                <h5 class="card-header">
+                    {% block header%} {% endblock %}
+                </h5>
+                <div class="card-body">
+                    <p class="card-text">
+                        {% block text %} {% endblock %}
+                    </p>
+                </div>
+            </div>
         </div>
 
         {% block flash_messages %}{% endblock %}
         <footer id="footer">
-            {% block footer%}{% endblock %}
+            {% if request.identity_context_data.authenticated == False %}
+                <div id="wrapper">
+                    <!-- the MS_ID_WEB key is configurable in the config file -->
+                </div>
+            {% endif %}
         </footer>
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

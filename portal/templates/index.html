@@ -1,4 +1,6 @@
-{% extends '../content.html' %}
+{% extends 'layout.html' %}
+
+{% block title %}Multicloud Ops: Home{% endblock %}
 
 {% block header %}
 
@@ -15,6 +17,5 @@
         Click here to get your <a class="btn btn-info p-1" href="{% url 'token_details' %}">ID Token Details</a>
     {% else %}
         Use the button on the top right to sign in. <br/>
-        Attempts to get your <a href="{% url 'token_details' %}">ID Token Details</a>
     {% endif %}
 {% endblock %}
