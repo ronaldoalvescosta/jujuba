@@ -75,16 +75,16 @@ GET http://127.0.0.1:34381
 ### project config
 ```bash
 # edit file: .env
-SECRET_KEY="......................."    # get value from settings.py
-ALLOWED_HOSTS=127.0.0.1,localhost       # insert comma separeted strings
+SECRET_KEY="......................."    # value from settings.py
+ALLOWED_HOSTS="127.0.0.1,localhost"     # comma separated strings
 DATABASE_NAME=jujuba                    # string
 DATABASE_USER=root                      # string
 DATABASE_PASS=jujuba                    # string
-DATABASE_HOST=192.168.49.2              # ip address or fqdn hostname
+DATABASE_HOST="192.168.49.2"            # ip address or fqdn hostname
 DATABASE_PORT=32128                     # numeric
-LANGUAGE_CODE=en-us                     # ISO 639-1 standard language code
-TIME_ZONE=America/Sao_Paulo             # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-BROKER_URL=amqp://admin:jujuba@192.168.49.2:30347/  # rabbitmq url format
+LANGUAGE_CODE="en-us"                   # ISO 639-1 standard language code
+TIME_ZONE="America/Sao_Paulo"           # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+BROKER_URL="amqp://admin:jujuba@192.168.49.2:30347/"    # rabbitmq url format
 ```
 
 ```bash
