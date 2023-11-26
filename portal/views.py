@@ -4,10 +4,6 @@ from .models import *
 
 ms_identity_web = settings.MS_IDENTITY_WEB
 
-def home(request):
-    subscriptions = CloudProviderSubscription.objects.all()
-    return render(request, "portal/home.html", {"subscriptions": subscriptions})
-
 def index(request):
     return render(request, "portal/auth/status.html")
 

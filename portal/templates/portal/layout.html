@@ -15,12 +15,13 @@
     <body>
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="/">Microsoft Identity Platform</a>
-            <span class="navbar-text">{% block banner_text %}{% endblock %}</span>
+            <a class="navbar-brand" href="/">Multi-Cloud Operator</a>
             <div class="btn-group ml-auto dropleft">
                 {% include "./auth/auth-bar-items.html" %}
             </div>
         </nav>
+        
+        <p>
 
         <div class="container body-content">
             {% block body %}{% endblock %}
