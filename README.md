@@ -1,4 +1,13 @@
-### Django Project: Jujuba
+### Django Project: (Jujuba) Multicloud Ops
+
+- aws s3
+- azure store account + container
+- aws iam user
+- aws iam role
+- aws sso permission set
+- azure iam
+- aws sqs
+- aws sns
 
 #### Uma aplicação web escrita em Django que permite que usuários realizem operações CRUD (create, read, update, delete) em recursos de nuvens AWS, Azure e OCI. 
 
