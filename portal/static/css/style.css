@@ -3,13 +3,13 @@ body {
 }
 
 /* Toggle Styles */
+
 #wrapper {
     padding-left: 0;
     -webkit-transition: all 0.6s ease;
     -moz-transition: all 0.6s ease;
     -o-transition: all 0.6s ease;
     transition: all 0.6s ease;
-
 }
 
 #wrapper.toggled {
@@ -24,7 +24,7 @@ body {
     height: 100%;
     margin-left: -250px;
     overflow-y: auto;
-    background-color: #1c1e20 !Important;
+    background-color: #1e1d22 !Important;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -36,17 +36,19 @@ body {
 }
 
 #page-content-wrapper {
-    position: absolute;
     width: 100%;
-    overflow-x: hidden;
- }
+    position: absolute;
+    padding: 10px;
+}
 
 #wrapper.toggled #page-content-wrapper {
+    width: 99%;
     position: absolute;
-    
+    margin-left: 30px;
 }
 
 /* Sidebar Styles */
+
 .sidebar-nav {
     position: absolute;
     top: 0;
@@ -109,10 +111,13 @@ body {
 
     #wrapper.toggled #sidebar-wrapper {
         width: 40px;
+
+
     }
 
     #wrapper.toggled span {
         visibility: hidden;
+
     }
 
     #wrapper.toggled i {
@@ -156,6 +161,8 @@ body {
 
     #wrapper.toggled #sidebar-wrapper {
         width: 140px;
+
+
     }
 
     #wrapper.toggled span {
@@ -163,10 +170,12 @@ body {
         position: relative;
         left: 70px;
         bottom: 13px;
+
     }
 
     #wrapper span {
         visibility: hidden;
+
     }
 
     #wrapper.toggled i {
@@ -186,7 +195,6 @@ body {
         position: relative;
         margin-right: 0;
     }
-
 }
 
 /*!
