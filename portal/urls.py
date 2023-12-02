@@ -11,6 +11,7 @@ urlpatterns = [
     path('index', views.index, name='index'),
     path('sign_in_status', views.index, name='status'),
     path('token_details', views.token_details, name='token_details'),
+    path('provider', views.provider, name='provider'),
     path(f'{settings.AAD_CONFIG.django.auth_endpoints.prefix}/', include(msal_urls)),
     *static(settings.STATIC_URL, document_root=settings.STATIC_ROOT),
 ]
