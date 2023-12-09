@@ -13,6 +13,8 @@ django model representing cloud providers such as aws, azure, gcp, oci, etc
 class CloudProvider(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=200)
+    is_enabled = models.BooleanField(default=False, verbose_name="Enabled")
+    is_supported = models.BooleanField(default=False, verbose_name="Supported")
 
     def __str__(self):
         return self.name

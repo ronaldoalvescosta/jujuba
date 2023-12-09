@@ -1,5 +1,9 @@
 ### Django Project: (Jujuba) Multicloud Ops
 
+https://django-tables2.readthedocs.io/en/latest/pages/installation.html
+https://django-crudbuilder.readthedocs.io/en/latest/installation.html
+
+
 - aws s3
 - azure store account + container
 - aws iam user
